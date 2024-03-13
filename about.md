@@ -1,6 +1,9 @@
 ---
 layout: page
-title: About
+title: about
+permalink: /about/
 ---
 
-Something about me.
+### Purpose
+
+This site is an archive of my exploration into machine learning/deep learning and robotics which includes my notes, learning journey, research, projects etc.
