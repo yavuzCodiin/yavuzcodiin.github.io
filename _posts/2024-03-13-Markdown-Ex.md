@@ -1,6 +1,6 @@
 ---
 title: Another markdown example
-published: false
+published: true
 mathjax: true #bu mathjax ile math datasını şekilli gösterebilirim
 ---
 
