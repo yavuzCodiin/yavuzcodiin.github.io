@@ -3,3 +3,4 @@
 - [x] thoughts page created  
 - [x] sketches page will be created
 - [ ] sketches page problems will be handled
+- [ ] category tags will be added
