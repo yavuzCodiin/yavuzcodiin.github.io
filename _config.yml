@@ -30,3 +30,11 @@ plugins:
 # Custom variables
 owner : "Yavuz"
 year : "2024"
+
+collections:
+  sketches:
+    output: true
+
+collections:
+  thoughts:
+    output: true

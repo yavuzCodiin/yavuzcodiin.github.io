@@ -1,0 +1,27 @@
+.thoughts-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .thought {
+    background-color: #0000004d;
+    border: 1px solid #340fd6;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  
+  .thought-content {
+    font-size: 16px;
+    color: #ffffff;
+    
+  }
+  
+  .thought-date {
+    font-size: 12px;
+    color: #ffffff;
+    text-align: right;
+    display: block;
+    margin-top: 5px;
+  }

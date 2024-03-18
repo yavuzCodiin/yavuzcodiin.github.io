@@ -1,0 +1,23 @@
+.sketches-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .sketch {
+    border: 1px solid #ccc; /* Optional: adds a border around the image */
+  }
+  
+  .sketch img {
+    width: 100%; /* Makes the image fill the container */
+    height: auto; /* Keeps the image's aspect ratio */
+    object-fit: cover; /* Ensures the image covers the area, cropping if necessary */
+  }
+  .sketch-title {
+    font-size: 1em; /* Adjust the font size as needed */
+    margin-top: 5px; /* Adds space between the image and the title */
+  }
+  
+  .sketch-description {
+    font-size: 0.9em;
+  }
