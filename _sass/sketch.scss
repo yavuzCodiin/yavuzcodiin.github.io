@@ -4,18 +4,21 @@
     gap: 20px;
   }
   
-  .sketch {
-    border: 1px solid #ccc; /* Optional: adds a border around the image */
+  .sketch-page {
+    text-align: center;
   }
   
   .sketch img {
-    width: 100%; /* Makes the image fill the container */
-    height: auto; /* Keeps the image's aspect ratio */
-    object-fit: cover; /* Ensures the image covers the area, cropping if necessary */
+    max-width: 100%;
+    height: auto;
   }
+  
+  .sketch-content {
+    margin-top: 20px;
+  }
+  
   .sketch-title {
-    font-size: 1em; /* Adjust the font size as needed */
-    margin-top: 5px; /* Adds space between the image and the title */
+    font-weight: bold;
   }
   
   .sketch-description {
