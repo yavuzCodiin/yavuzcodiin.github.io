@@ -1,7 +1,7 @@
 ---
 layout: thoughts
 title: "Prepared Mind"
-published: true
+published: false
 ---
 
 
