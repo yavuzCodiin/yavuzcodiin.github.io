@@ -1,6 +1,9 @@
 ---
-#
+# Only the main Sass file needs front matter (the dashes are enough)
 ---
+
 @import "base";
+
 @import "thought";
-@import "sketch"; // This line imports sketch.scss from the _sass directory.
+
+@import "gallery"; // Assuming you named your gallery styles "gallery.scss"
