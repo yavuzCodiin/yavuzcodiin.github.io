@@ -31,6 +31,3 @@ Pathfinding is the computational process of finding a path between two points. I
 
 
 ## Common Pathfinding Algorithms
-
-Where I left
-https://www.perplexity.ai/search/pathfinding-algo-blog-Y07jWIAdTyKKg.rHdSpTpA
