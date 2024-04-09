@@ -319,7 +319,7 @@ def add_point(a, b):
     return [a[0]+ b[0], a[1]+ b[1]]
 ```
 
-
+<img src="/images/post-1/empty_and_walled_maze.jpg" width="850" height="350" alt="Empty & Wall Maze"/>
 
 So this is our maze with `Cell`, `CellMark`, `CellType`, `Cell_Network` we have four classes and they have their attributes so along the way we will use them to create algorithm, finding path and visualizing this let's see how our algorithm works.
 
@@ -350,6 +350,13 @@ procedure GBS(start, target) is:
   return failure
 ```
 Our shortest path algorithm requires a board, a start point, an end point, and the maximum distance allowed for the path. It begins by cloning the board, and then it operates on this cloned version. As previously discussed in the context of the cell network, we initialize each cell's count to math.inf. Next, we mark the start and end points on the board. The first position is added to the open list, which we will use to check the cells, setting the start cell's count to 0. We then define our neighbors as [left, right, down, up]. As long as there are cells in the open list, our function continues to operate. It starts by popping the first cell from the list and designating it as the current position. We retrieve the cell at the current position and proceed to check its neighbors. For a neighbor to be considered, it must be a valid point, and its type must be empty. If these conditions are met, we increment the current cell's count by 1 to determine the distance. If this distance is less than the maximum allowed, we assign this distance to the neighbor's count and record the cell it originated from. Finally, we add the neighbor's position to the open list to continue the search process.
+
+While measuring the distance we will use something called Manhattan Distance, it is named after grid shape of streets in Manhattan and in this streets we can't move diagonally so we either move in x or y never both at the same time, so we can't use euclidean distance.
+
+<img src="/images/post-1/manhattan_distance.jpg" width="850" height="450" alt="Manhattan Distance"/>
+
+This function calculates the distance from start for every cell, not only destination, this is helpful when we think about robots navigation where robot might need to navigate to various points in an environment efficiently. We can use it to calculate the shortest path to any of the nodes. However, if optimization is our priority we'd change the algorithm, when it finds destination it stops.
+
 ```python
 import my_maze
 import math
@@ -415,5 +422,246 @@ def fill_shortest_path(board, start, end, max_distance=math.inf):
     return nboard
 ```
 
+We will use backtracking to find shortest path, it works as follows:
+1. Start from destination cell.
+2. Scan neighbours and pick with lowest number.
+3. Repeat the process until you reach start cell.
+
 ```python
+def backtrack_to_start(board, end):
+    """
+
+    Parameters:
+    -----------
+       board (my_maze.Board):
+         The maze board object. The board represents the maze structure, where
+         each cell can be empty or a wall.
+       
+       end (tuple):
+         A tuple of two integers representing the ending position (row, column) in the maze.
+    
+    Returns:
+    --------
+      list:
+        A list of `Cell` objects representing the path from the end position to the start
+        position.
+
+    """
+
+    cell = board.at( end )
+    path = []
+    while cell != None:
+        path.append(cell)
+        cell = cell.path_from
+    
+    return path
 ```
+
+<img src="/images/post-1/finding_path_maze.png" width="850" height="550" alt="Shortest Path"/>
+
+### <u>Drawing Maze and Path</u>
+Until here we created structure of our maze, then we created our shortest path finding algorithm now we will visualize them.
+
+```python
+import pygame, math
+import my_maze
+
+pygame.init()
+pygame.display.set_caption("Demo => Path Finding")
+cell_font = pygame.font.SysFont(pygame.font.get_default_font(), 25)
+```
+
+This function `trans_rect` is designed to move a rectangle by a specified offset without altering its size.
+
+```python
+def trans_rect(r, offset):
+    """
+
+    This function takes rect( => x, y, w, h <= ) then adjusts the position of rectangle by applying an offset to it
+    
+    Parameters:
+    -----------
+        r (list): This parameter represents rectangle.
+
+        offset (list): This parameter represents the offset by which you want to move the rectangle. 
+    
+    Returns:
+    --------
+        (list):
+            - The new x-coordinate of the rectangle's top-left corner.
+            - The new y-coordinate of the rectangle's top-left corner.
+            - The original width of the rectangle.
+            - The original height of the rectangle
+    
+    """
+    return [r[0]+offset[0], r[1]+offset[1], r[2], r[3]]
+```
+
+Our main loop for controlling the application 
+
+```python
+def main_loop(ui):
+    """
+    
+    Run the main event loop of the application.
+
+    This function initializes the display, handles user input events, and updates the display based on the user interface (UI) object's draw method. The loop runs indefinitely until the user quits the application or presses the escape key.
+
+    Parameters
+    ----------
+      ui : object
+        An instance of a user interface class that has `step`, `reset`, and `draw` methods.
+
+    Returns
+    -------
+      None
+
+    """
+    
+    screen = pygame.display.set_mode((1000,800))
+
+    clock = pygame.time.Clock()
+    clock.tick()
+
+    while True:
+        event = pygame.event.poll()
+        if event.type == pygame.QUIT:
+            break
+        elif event.type == pygame.KEYDOWN:            
+            if event.key == pygame.K_ESCAPE:
+                break
+            if event.key == pygame.K_LEFT:
+                ui.step(-1)
+            if event.key == pygame.K_RIGHT:
+                ui.step(1)
+            if event.key == pygame.K_r:
+                ui.reset()
+        
+        ui.draw(screen)
+
+        pygame.display.update()
+        clock.tick(60)
+    
+    pygame.quit()
+```
+
+The Finder class is designed to manage and visualize a board and a path.
+
+```python
+class Finder:
+    def __init__(self):
+        self.board = None
+        self.path = None
+```
+
+```python
+    def set_board(self, board):
+        """
+
+        Set the board attribute of the instance.
+
+        Parameters
+        ----------
+          self : object
+            The instance of the class from which this method is called.
+        
+          board : Board
+            The board object to be set for the instance.
+
+        Returns
+        -------
+          None
+
+        """
+        self.board = board
+```
+```python
+    def set_path(self, path):
+        """
+
+        Set the path attribute of the instance.
+
+        Parameters
+        ----------
+          self : object
+            The instance of the class from which this method is called.
+        
+          path : list of tuples/lists
+            The path to be set for the instance, typically a list of positions.
+
+        Returns
+        -------
+          None
+        
+        """
+        self.path = path
+```
+```python
+    def run(self):
+        """
+
+        Start the main event loop of the application.
+
+        This method calls the main_loop function, passing the current instance as an argument.
+
+        Parameters
+        ----------
+          self : object
+            The instance of the class from which this method is called.
+
+        Returns
+        -------
+          None
+
+        """
+        main_loop(self)
+```
+
+```python
+    def draw(self, surface):
+        """
+        Draw the board and path on the given surface.
+
+        This method draws the board on the provided surface. If a path is set, it also draws the path.
+    
+        Parameters
+        ----------
+          self : object
+            The instance of the class from which this method is called.
+        
+          surface : pygame.Surface
+            The Pygame surface on which the board and path will be drawn.
+    
+        Returns
+        -------
+          None
+        
+        """
+        if self.board == None:
+            return
+        
+        draw_board(surface, surface.get_rect(), self.board)
+        if self.path != None:
+            draw_path(surface, surface.get_rect(), self.board, self.path)
+```
+Next I will talk about metrics of board which we will use them to draw our cell, maze, path.
+
+This class will help us to locate specific parts of the board, including the left, top, height, and bottom. Additionally, it will help us to determine cell's x and y coordinates, allowing us to create a cell rectangle.  
+
+```python
+class BoardMetrics:
+    def __init__(self, area, board):
+        self.area = area #area of the board which is surface.rect() object rect<x,y,w,h> board is what we created in my_maze.py
+        self.spacing = 3 #spacing for cell's and board
+        self.left = area[0] + self.spacing #left is starting position of cell 1 with spacing
+        self.top = area[1] + self.spacing  # same for left but for top side
+        self.height = area[3] - area[1] - 2 * self.spacing #height of board - 2 spacing from each side
+        self.width = area[2] - area[0] - 2 * self.spacing #width of board - 2 spacing from each side
+        self.num_y = board.get_size()[1] #board height with number of rows[[][]---]
+        self.num_x = board.get_size()[0] #board width with number of columns[[1,2,3,4...]]
+        self.cx = self.width / self.num_x #cell's x found by dividing width of board to num of cell's
+        self.cy = self.height / self.num_y #cell's y found by dividing height of board to num of cell's
+```
+
+<img src="/images/post-1/board_metrics.jpg" width="850" height="450" alt="Board Metrics"/>
+
