@@ -5,7 +5,9 @@ published: true
 
 ## 1)
 
-<img src="/images/post-2/image_1.png" width="1150" height="500" alt="Circuit"/>
+<div class="image-container">
+    <img src="/images/post-2/image_1.png" alt="Circuit" loading="lazy" />
+</div>
 
 In the given single-phase half wave rectifier circuit, the load current i0=Ia ​is assumed to be constant, with a very large load inductance (L) chosen by your selection, operating at a frequency of 50 Hz.
 
@@ -23,12 +25,18 @@ Introducing a source inductance of 5 mH into the rectifier circuit requires a re
 
 # <u>Design</u>
 
-<img src="/images/post-2/image_2.png" width="1150" height="500" alt="System Design"/>
+<div class="image-container">
+    <img src="/images/post-2/image_2.png" alt="System Design" loading="lazy"/>
+</div>
 
 ## (a)
 
-<img src="/images/post-2/image_3.png" width="1150" height="700" alt="System Design_a"/>
-<img src="/images/post-2/image_4.png" width="1150" height="700" alt="System Design_a"/>
+<div class="image-container">
+    <img src="/images/post-2/image_3.png" alt="System Design_a" loading="lazy"/>
+</div>
+<div class="image-container">
+    <img src="/images/post-2/image_4.png" alt="System Design_a" loading="lazy"/>
+</div>
 
 ## (b)
 
