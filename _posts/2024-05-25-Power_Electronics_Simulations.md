@@ -40,24 +40,48 @@ Introducing a source inductance of 5 mH into the rectifier circuit requires a re
 
 ## (b)
 
-<img src="/images/post-2/image_5.png" width="1150" height="700" alt="System Design_b"/>
-<img src="/images/post-2/image_6.png" width="1150" height="700" alt="System Design_b"/>
+<div class="image-container">
+    <img src="/images/post-2/image_5.png" alt="System Design_b" loading="lazy"/>
+</div>
+<div class="image-container">
+    <img src="/images/post-2/image_6.png" alt="System Design_b" loading="lazy"/>
+</div>
 
 ## (c)
 
-<img src="/images/post-2/image_7.png" width="1150" height="700" alt="System Design_c"/>
-<img src="/images/post-2/image_8.png" width="1150" height="700" alt="System Design_c"/>
-<img src="/images/post-2/image_9.png" width="1150" height="700" alt="System Design_c"/>
-<img src="/images/post-2/image_10.png" width="1150" height="700" alt="System Design_c"/>
+<div class="image-container">
+    <img src="/images/post-2/image_7.png" alt="System Design_c" loading="lazy"/>
+</div>
+<div class="image-container">
+    <img src="/images/post-2/image_8.png" alt="System Design_c" loading="lazy"/>
+</div>
+<div class="image-container">
+    <img src="/images/post-2/image_9.png" alt="System Design_c" loading="lazy"/>
+</div>
+<div class="image-container">
+    <img src="/images/post-2/image_10.png" alt="System Design_c" loading="lazy"/>
+</div>
 
 ## (d)
 
-<img src="/images/post-2/image_11.png" width="1150" height="400" alt="System Design_d"/>
-<img src="/images/post-2/image_12.png" width="1150" height="700" alt="System Design_d"/>
-<img src="/images/post-2/image_13.png" width="1150" height="700" alt="System Design_d"/>
-<img src="/images/post-2/image_14.png" width="1150" height="700" alt="System Design_d"/>
-<img src="/images/post-2/image_15.png" width="1150" height="700" alt="System Design_d"/>
-<img src="/images/post-2/image_16.png" width="1150" height="700" alt="System Design_d"/>
+<div class="image-container">
+    <img src="/images/post-2/image_11.png" alt="System Design_d" loading="lazy"/>
+</div>
+<div class="image-container">
+    <img src="/images/post-2/image_12.png" alt="System Design_d" loading="lazy"/>
+</div>
+<div class="image-container">
+    <img src="/images/post-2/image_13.png" alt="System Design_d" loading="lazy"/>
+</div>
+<div class="image-container">
+    <img src="/images/post-2/image_14.png" alt="System Design_d" loading="lazy"/>
+</div>
+<div class="image-container">
+    <img src="/images/post-2/image_15.png" alt="System Design_d" loading="lazy"/>
+</div>
+<div class="image-container">
+    <img src="/images/post-2/image_16.png" alt="System Design_d" loading="lazy"/>
+</div>
 
 ## 2)
 
@@ -76,21 +100,33 @@ By comparing and contrasting the voltage and current waveforms for these differe
 
 # <u>Design</u>
 
-<img src="/images/post-2/image_17.png" width="1150" height="700" alt="System Design"/>
+<div class="image-container">
+    <img src="/images/post-2/image_17.png" alt="System Design" loading="lazy"/>
+</div>
 
 ## (a)
 
-<img src="/images/post-2/image_18.png" width="1150" height="700" alt="System Design_a"/>
-<img src="/images/post-2/image_19.png" width="1150" height="700" alt="System Design_a"/>
+<div class="image-container">
+    <img src="/images/post-2/image_18.png" alt="System Design_a" loading="lazy"/>
+</div>
+<div class="image-container">
+    <img src="/images/post-2/image_19.png" alt="System Design_a" loading="lazy"/>
+</div>
 
 ## (b)
 
-<img src="/images/post-2/image_20.png" width="1150" height="700" alt="System Design_b"/>
+<div class="image-container">
+    <img src="/images/post-2/image_20.png" alt="System Design_b" loading="lazy"/>
+</div>
 
 ## (c)
 
-<img src="/images/post-2/image_21.png" width="1150" height="400" alt="System Design_c"/>
-<img src="/images/post-2/image_22.png" width="1150" height="700" alt="System Design_c"/>
+<div class="image-container">
+    <img src="/images/post-2/image_21.png" alt="System Design_c" loading="lazy"/>
+</div>
+<div class="image-container">
+    <img src="/images/post-2/image_22.png" alt="System Design_c" loading="lazy"/>
+</div>
 
 ### Comment:
 From the values I obtained, our phase delay is 2.5×10^-3. Current increase from part a to b since our Z decreased maximum current increased dramatically, also Vrms is increased. In part c Vrms also increased but this time current decreased dramatically since our Z is increased. Also when I increased inductance we can see that graphs become more unstable.
@@ -99,19 +135,29 @@ From the values I obtained, our phase delay is 2.5×10^-3. Current increase from
 
 In the given single-phase fully-controlled bridge converter scenario, the system consists of a resistive load (RL=10Ω) powered by a 240 V rms 50 Hz AC source. The converter operates with a firing angle α=90°. The objective is to simulate the output voltage (v0) and the current through each thyristor, and then verify the relationship between the input current graphically.
 
-<img src="/images/post-2/image_23.png" width="1150" height="700" alt="Circuit_3"/>
+<div class="image-container">
+    <img src="/images/post-2/image_23.png" alt="Circuit_3" loading="lazy"/>
+</div>
 
 # <u>Design</u>
 
-<img src="/images/post-2/image_24.png" width="1150" height="700" alt="Design_3"/>
-<img src="/images/post-2/image_25.png" width="1150" height="700" alt="Design_3"/>
-<img src="/images/post-2/image_26.png" width="1150" height="700" alt="Design_3"/>
+<div class="image-container">
+    <img src="/images/post-2/image_24.png" alt="Design_3" loading="lazy"/>
+</div>
+<div class="image-container">
+    <img src="/images/post-2/image_25.png" alt="Design_3" loading="lazy"/>
+</div>
+<div class="image-container">
+    <img src="/images/post-2/image_26.png" alt="Design_3" loading="lazy"/>
+</div>
 
 ### Comment: 
 
 This circuit has only Resistor with Thyristors. From graphs we can see that all of them started at the same time due to no charging, discharging case (No L component). Also I can see that there is no negative part in the graphs. We have four thyristors in our design and T1, T2 thyristors fired together and T3, T4 fired together. Voltage can be controlled by controlling firing angle of Thyristors.
 
-<img src="/images/post-2/image_27.png" width="1150" height="350" alt="some calc"/>
+<div class="image-container">
+    <img src="/images/post-2/image_27.png" alt="some calc" loading="lazy"/>
+</div>
 
 ## 4)
 
@@ -131,29 +177,51 @@ For Only A and B Phases: Introducing source inductances for only A and B phases 
 
 For All Phases: Comparing this scenario with the previous one (only A and B phases having inductance) will provide a comprehensive understanding of how the presence of inductance in all phases influences the output voltage and current characteristics. Analyzing these differences will help in assessing the impact of inductance on the overall system performance.
 
-<img src="/images/post-2/image_28.png" width="1150" height="400" alt="circuit 4"/>
+<div class="image-container">
+    <img src="/images/post-2/image_28.png" alt="circuit 4" loading="lazy"/>
+</div>
 
 # <u>Design</u>
 
-<img src="/images/post-2/image_29.png" width="1150" height="700" alt="design 4"/>
+<div class="image-container">
+    <img src="/images/post-2/image_29.png" alt="design 4" loading="lazy"/>
+</div>
 
 ## (a) & (b)
 
-<img src="/images/post-2/image_30.png" width="1150" height="700" alt="design_a&b"/>
-<img src="/images/post-2/image_31.png" width="1150" height="700" alt="design_a&b"/>
+<div class="image-container">
+    <img src="/images/post-2/image_30.png" alt="design_a&b" loading="lazy"/>
+</div>
+<div class="image-container">
+    <img src="/images/post-2/image_31.png" alt="design_a&b" loading="lazy"/>
+</div>
 
 ## (c)
 
-<img src="/images/post-2/image_32.png" width="1150" height="700" alt="design_c"/>
+<div class="image-container">
+    <img src="/images/post-2/image_32.png" alt="design_c" loading="lazy"/>
+</div>
 
 ## (d)
 
-<img src="/images/post-2/image_33.png" width="1150" height="400" alt="design_d"/>
-<img src="/images/post-2/image_34.png" width="1150" height="700" alt="design_d"/>
-<img src="/images/post-2/image_35.png" width="1150" height="300" alt="design_d"/>
-<img src="/images/post-2/image_36.png" width="1150" height="700" alt="design_d"/>
-<img src="/images/post-2/image_37.png" width="1150" height="400" alt="design_d"/>
-<img src="/images/post-2/image_38.png" width="1150" height="700" alt="design_d"/>
+<div class="image-container">
+    <img src="/images/post-2/image_33.png" alt="design_d" loading="lazy"/>
+</div>
+<div class="image-container">
+    <img src="/images/post-2/image_34.png" alt="design_d" loading="lazy"/>
+</div>
+<div class="image-container">
+    <img src="/images/post-2/image_35.png" alt="design_d" loading="lazy"/>
+</div>
+<div class="image-container">
+    <img src="/images/post-2/image_36.png" alt="design_d" loading="lazy"/>
+</div>
+<div class="image-container">
+    <img src="/images/post-2/image_37.png" alt="design_d" loading="lazy"/>
+</div>
+<div class="image-container">
+    <img src="/images/post-2/image_38.png" alt="design_d" loading="lazy"/>
+</div>
 
 ### Comment: 
 
@@ -172,27 +240,45 @@ For α=90°, the source current waveform will be simulated. The RMS value of the
 Simulation with Freewheeling Diode:
 Upon adding a freewheeling diode parallel to the load, the load and current characteristics will be simulated again. The freewheeling diode provides a path for the inductive current to circulate when the main thyristors are off, reducing voltage spikes and ensuring a smoother current flow. Comparing these characteristics with the initial simulation (without the diode) will highlight the differences in terms of voltage spikes, current fluctuations, and overall stability of the system.
 
-<img src="/images/post-2/image_39.png" width="1150" height="700" alt="circuit_5"/>
+<div class="image-container">
+    <img src="/images/post-2/image_39.png" alt="circuit_5" loading="lazy"/>
+</div>
 
 # <u>Design</u>
 
-<img src="/images/post-2/image_40.png" width="1150" height="700" alt="design_5"/>
+<div class="image-container">
+    <img src="/images/post-2/image_40.png" alt="design_5" loading="lazy"/>
+</div>
 
 ## (a)
 
-<img src="/images/post-2/image_41.png" width="1150" height="700" alt="design_a"/>
-<img src="/images/post-2/image_42.png" width="1150" height="700" alt="design_a"/>
+<div class="image-container">
+    <img src="/images/post-2/image_41.png" alt="design_a" loading="lazy"/>
+</div>
+<div class="image-container">
+    <img src="/images/post-2/image_42.png" alt="design_a" loading="lazy"/>
+</div>
 
 ## (b)
 
-<img src="/images/post-2/image_43.png" width="1150" height="350" alt="design_b"/>
-<img src="/images/post-2/image_44.png" width="1150" height="700" alt="design_b"/>
+<div class="image-container">
+    <img src="/images/post-2/image_43.png" alt="design_b" loading="lazy"/>
+</div>
+<div class="image-container">
+    <img src="/images/post-2/image_44.png" alt="design_b" loading="lazy"/>
+</div>
 
 ## (c)
 
-<img src="/images/post-2/image_45.png" width="1150" height="370" alt="design_c"/>
-<img src="/images/post-2/image_46.png" width="1150" height="700" alt="design_c"/>
-<img src="/images/post-2/image_47.png" width="1150" height="700" alt="design_c"/>
+<div class="image-container">
+    <img src="/images/post-2/image_45.png" alt="design_c" loading="lazy"/>
+</div>
+<div class="image-container">
+    <img src="/images/post-2/image_46.png" alt="design_c" loading="lazy"/>
+</div>
+<div class="image-container">
+    <img src="/images/post-2/image_47.png" alt="design_c" loading="lazy"/>
+</div>
 
 ## Comment: 
 
