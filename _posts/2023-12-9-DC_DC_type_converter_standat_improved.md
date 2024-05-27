@@ -1,5 +1,5 @@
 ---
-title: <span class="gradient-text_5">DC/DC type Converter(CLASSIC, PID CONTROLLED & improved)<span>
+title: DC/DC type Converter(CLASSIC, PID CONTROLLED & improved)
 published: true
 ---
 
