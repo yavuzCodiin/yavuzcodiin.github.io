@@ -40,3 +40,10 @@ collections:
 collections:
   thoughts:
     output: true
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    inline_theme: github
+    block_theme: github
