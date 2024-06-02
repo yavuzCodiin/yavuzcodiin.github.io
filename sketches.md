@@ -4,7 +4,12 @@ title: Digital Art
 permalink: /sketches/
 ---
 
- To see original size click on the image
+<!-- Include color palette -->
+<link rel="stylesheet" href="D:\github\yavuzcodiin.github.io\_sass\gradient_colors.scss">
+<link rel="stylesheet" href="D:\github\yavuzcodiin.github.io\_sass\base_colors.scss">
+<!-- Include color palette -->
+
+<p class="gradient-text_8">To see original size click on the image</p>
 
 <div class="art-gallery">
     <div class="art-item"><img src="/images/sketch-library/altair.png" alt="Altair" onclick="openLightbox('/images/sketch-library/altair.png')"></div>
