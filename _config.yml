@@ -33,9 +33,9 @@ year : "2024"
 
 baseurl: "" # If your site is at the root, otherwise set the subpath
 
-collections:
-  sketches:
-    output: true
+# collections:
+#   sketches:
+#     output: true
 
 collections:
   thoughts:
