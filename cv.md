@@ -32,8 +32,10 @@ permalink: /cv/
 
     <div class="cv-section">
         <h2 class="gradient-text_4">Professional Experience</h2>
-        <h3 class="gradient-text_24">Robotics Software Engineer at NH Tech Robotics (Istanbul, Turkey)</h3>
-        <p class= "gradient-text_8"><i>April 2024 - Present</i></p>
+        <div class="typing-container">
+            <h3 class="typing gradient-text_24">Robotics Software Engineer at NH Tech Robotics (Istanbul, Turkey)</h3>
+        </div>
+        <p class="gradient-text_8"><i>April 2024 - Present</i></p>
         <ul>
             <li>Robotics Development and Simulation: Design, develop, and simulate advanced robotic systems to enhance functionality and efficiency, ensuring reliability and performance through comprehensive testing in virtual environments using RViz2 and Gazebo.</li>
             <br>
@@ -48,8 +50,10 @@ permalink: /cv/
     </div>
 
     <div class="cv-section">
-        <h3 class="gradient-text_24">Robotics Application Engineer at ACROME Robotics (Istanbul, Turkey)</h3>
-        <p class= "gradient-text_8"><i>February 2023 - October 2023</i></p>
+        <div class="typing-container">
+            <h3 class="typing gradient-text_24">Robotics Application Engineer at ACROME Robotics (Istanbul, Turkey)</h3>
+        </div>
+        <p class="gradient-text_8"><i>February 2023 - October 2023</i></p>
         <ul>
             <li>Responsible for product development & process of SMD (Smart Motor Driver) family. Our first R&D device which is a smart motor driver.</li>
             <br>
@@ -115,8 +119,10 @@ permalink: /cv/
     </div>
 
     <div class="cv-section">
-        <h3 class="gradient-text_24">Research & Development Intern at ACROME Robotics (Istanbul, Turkey)</h3>
-        <p class= "gradient-text_8"><i>July 2022 - August 2022</i></p>
+        <div class="typing-container">
+            <h3 class="typing gradient-text_24">Research & Development Intern at ACROME Robotics (Istanbul, Turkey)</h3>
+        </div>
+        <p class="gradient-text_8"><i>July 2022 - August 2022</i></p>
         <ul>
             <li>Worked with Stewart Pro 6-DOF parallel robot used for positioning and motion control in professional photography, quality assurance positioner, and calibration applications. Also worked with Delta Robot, a 3-DOF parallel robot used for pick & place, robotic surgery, harvesting, and welding.</li>
             <br>
@@ -130,8 +136,10 @@ permalink: /cv/
     </div>
 
     <div class="cv-section">
-        <h3 class="gradient-text_24">Robotics Intern at Inovasyon Mühendislik Ltd. Sti. (Eskisehir, Turkey)</h3>
-        <p class= "gradient-text_8"><i>July 2021 - August 2021</i></p>
+        <div class="typing-container">
+            <h3 class="typing gradient-text_24">Robotics Intern at Inovasyon Mühendislik Ltd. Sti. (Eskisehir, Turkey)</h3>
+        </div>
+        <p class="gradient-text_8"><i>July 2021 - August 2021</i></p>
         <ul>
             <li>Developed embedded programming skills using ROS (Robot Operating System) framework, RViz, Gazebo, and Python, and learned Linux operating system and its distribution Ubuntu.</li>
             <br>
@@ -148,8 +156,10 @@ permalink: /cv/
     </div>
 
     <div class="cv-section">
-        <h3 class="gradient-text_24">Developer Experiences and Evangelism Intern at Microsoft (Istanbul, Turkey)</h3>
-        <p class= "gradient-text_8"><i>July 2017 - August 2017</i></p>
+        <div class="typing-container">
+            <h3 class="typing gradient-text_24">Developer Experiences and Evangelism Intern at Microsoft (Istanbul, Turkey)</h3>
+        </div>
+        <p class="gradient-text_8"><i>July 2017 - August 2017</i></p>
         <ul>
             <li>Responsible for creating a project using Microsoft technologies and services (e.g., Azure, Chatbot Framework, Cognitive Services).</li>
         </ul>
@@ -164,8 +174,10 @@ permalink: /cv/
     </div>
 
     <div class="cv-section">
-        <h3 class="gradient-text_24">Tech Author at Dijitolog (product.blog) (Istanbul, Turkey)</h3>
-        <p class= "gradient-text_8"><i>February 2017 - June 2017</i></p>
+        <div class="typing-container">
+            <h3 class="typing gradient-text_24">Tech Author at Dijitolog (product.blog) (Istanbul, Turkey)</h3>
+        </div>
+        <p class="gradient-text_8"><i>February 2017 - June 2017</i></p>
     </div>
 
     <div class="cv-section">
@@ -215,5 +227,43 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Ensure the lightbox is hidden on page load
     closeLightbox();
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var elements = document.querySelectorAll('.typing');
+    var options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    function typeWriter(element, text, i, callback) {
+        if (i < text.length) {
+            element.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(function() {
+                typeWriter(element, text, i, callback);
+            }, 50);
+        } else if (typeof callback == 'function') {
+            callback();
+        }
+    }
+
+    var observer = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                var element = entry.target;
+                var text = element.textContent;
+                element.textContent = '';
+                typeWriter(element, text, 0);
+                observer.unobserve(element);
+            }
+        });
+    }, options);
+
+    elements.forEach(function(element) {
+        observer.observe(element);
+    });
 });
 </script>
