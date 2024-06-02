@@ -65,28 +65,27 @@ permalink: /cv/
             <br>
             <li>Responsible for content side (user manual, growth marketing, design, analysis process), created how-to-use videos, wrote technical blog posts related to our products, especially with SMD.</li>
             <br>
-           <table class="link-table">
-                <tr>
-                    <td><a href="https://acrome.net/post/synchronizing-linear-motors-and-dc-motors">Synchronizing Linear Motors and DC Motors</a></td>
-                    <td><a href="https://acrome.net/post/essentials-of-building-a-mobile-robot-all-you-need-to-know">Essentials of Building a Mobile Robot: All You Need to Know</a></td>
-                    <td><a href="https://acrome.net/post/exploring-acromes-stewart-platform-capabilities-deliverables-and-usage">Exploring ACROME’s Stewart Platform: Capabilities, Deliverables and Usage</a></td>
-                    <td><a href="https://acrome.net/post/applications-that-you-can-do-with-brushed-dc-motors">Applications That You Can Do With Brushed DC Motors</a></td>
-                </tr>
-                <tr>
-                    <td><a href="https://acrome.net/post/exploring-control-systems-and-stability-a-comprehensive-guide-to-ball-balancing-tables-and-bode-diagrams">Exploring Control Systems and Stability: A Comprehensive Guide to Ball Balancing Tables and Bode Diagrams</a></td>
-                    <td><a href="https://acrome.net/post/where-to-use-and-how-to-use-brushed-dc-motors">Where to and How to use Brushed DC Motors Drivers?</a></td>
-                    <td><a href="https://acrome.net/post/beginners-guide-to-actuators">Beginners Guide to Actuators</a></td>
-                    <td><a href="https://acrome.net/post/acrome-products-role-in-prof-claudia-yasars-teaching-approach">Acrome Products Role in Prof. Claudia Yaşar’s Teaching Approach</a></td>
-                </tr>
-                <tr>
-                    <td><a href="https://acrome.net/post/from-gaming-to-engineering-joystick-control-of-stewart-platform">From Gaming to Engineering: Joystick Control of Stewart Platform</a></td>
-                    <td><a href="https://acrome.net/post/what-are-delta-robots-used-for">What Are Delta Robots Used For?</a></td>
-                    <td><a href="https://www.youtube.com/watch?v=bypRvJEKuLU&t=290s">ACROME SMD Tutorial Video</a></td>
-                    <td><a href="https://acrome.net/post/introduction-to-robotic-manipulators">Introduction to Robotic Manipulators</a></td>
-                </tr>
-            </table>
-
         </ul>
+        <table class="link-table">
+            <tr>
+                <td><a href="https://acrome.net/post/synchronizing-linear-motors-and-dc-motors">Synchronizing Linear Motors and DC Motors</a></td>
+                <td><a href="https://acrome.net/post/essentials-of-building-a-mobile-robot-all-you-need-to-know">Essentials of Building a Mobile Robot: All You Need to Know</a></td>
+                <td><a href="https://acrome.net/post/exploring-acromes-stewart-platform-capabilities-deliverables-and-usage">Exploring ACROME’s Stewart Platform: Capabilities, Deliverables and Usage</a></td>
+                <td><a href="https://acrome.net/post/applications-that-you-can-do-with-brushed-dc-motors">Applications That You Can Do With Brushed DC Motors</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://acrome.net/post/exploring-control-systems-and-stability-a-comprehensive-guide-to-ball-balancing-tables-and-bode-diagrams">Exploring Control Systems and Stability: A Comprehensive Guide to Ball Balancing Tables and Bode Diagrams</a></td>
+                <td><a href="https://acrome.net/post/where-to-use-and-how-to-use-brushed-dc-motors">Where to and How to use Brushed DC Motors Drivers?</a></td>
+                <td><a href="https://acrome.net/post/beginners-guide-to-actuators">Beginners Guide to Actuators</a></td>
+                <td><a href="https://acrome.net/post/acrome-products-role-in-prof-claudia-yasars-teaching-approach">Acrome Products Role in Prof. Claudia Yaşar’s Teaching Approach</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://acrome.net/post/from-gaming-to-engineering-joystick-control-of-stewart-platform">From Gaming to Engineering: Joystick Control of Stewart Platform</a></td>
+                <td><a href="https://acrome.net/post/what-are-delta-robots-used-for">What Are Delta Robots Used For?</a></td>
+                <td><a href="https://www.youtube.com/watch?v=bypRvJEKuLU&t=290s">ACROME SMD Tutorial Video</a></td>
+                <td><a href="https://acrome.net/post/introduction-to-robotic-manipulators">Introduction to Robotic Manipulators</a></td>
+            </tr>
+        </table>
         <div class="art-gallery">
             <div class="art-item">
                 <img src="/images/experience_visual_library/acrome_job_1.png" alt="acrome_job_1" onclick="openLightbox('/images/experience_visual_library/acrome_job_1.png')">
