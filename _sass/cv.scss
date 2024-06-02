@@ -73,25 +73,43 @@
     cursor: pointer;
 }
 
-.link-table {
-    width: 100%;
-    border-collapse: collapse;
+.link-table a {
+    color: linear-gradient(to right, #0e0725, #5c03bc, #e536ab, #f4e5f0);
+    text-decoration: none;
 }
 
 .link-table td {
-    border: 2px solid; /* Make the border visible */
+    border: 5px solid transparent; /* Make the border visible */
     border-image: linear-gradient(to right, #0e0725, #5c03bc, #e536ab, #f4e5f0) 1; /* Gradient border */
     border-image-slice: 1; /* Ensure the gradient is applied */
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     background-color: transparent; /* Transparent background */
-}
-
-.link-table a {
-    color: #00f;
-    text-decoration: none;
+    margin-bottom: 5px;
 }
 
 .link-table a:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+    .link-table, .link-table tr, .link-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .link-table td {
+        border: 5px solid transparent; /* Make the border visible */
+        border-image: linear-gradient(to right, #0e0725, #5c03bc, #e536ab, #f4e5f0) 1; /* Gradient border */
+        border-image-slice: 1; /* Ensure the gradient is applied */
+        padding: 5px;
+        text-align: center;
+        background-color: transparent; /* Transparent background */
+        margin-bottom: 5px;
+    }
+
+    .link-table td a {
+        display: block;
+        width: 100%;
+    }
 }
