@@ -4,6 +4,4 @@ title: about
 permalink: /about/
 ---
 
-### Purpose
-
-This site is an archive of my exploration into machine learning/deep learning and robotics which includes my notes, learning journey, research, projects etc.
+This site is all about me and my journey. You'll find my notes, thoughts, learning experiences, research, and projects here.
