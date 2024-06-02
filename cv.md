@@ -14,7 +14,7 @@ permalink: /cv/
     <div class="cv-header">
         <h1 class="gradient-text_31">Yavuz Ertuğrul</h1>
         <p class="gradient-text_24">Robotics Software Engineer</p>
-        <p class="gradient-text_4"> | <a href="mailto:yavuz.coding@gmail.com">yavuz.coding@gmail.com</a></p>
+        <p class="gradient-text_4"> <a href="mailto:yavuz.coding@gmail.com">yavuz.coding@gmail.com</a></p>
         <p>
             <a href="https://www.linkedin.com/in/yavuz-ertuğrul123">LinkedIn</a> |
             <a href="https://www.yavuzertugrul.com/">Personal Website/Portfolio/Blog</a> |
