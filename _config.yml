@@ -6,7 +6,7 @@ author:
   url: "https://www.yavuzertugrul.com"
 
 baseurl: /
-url: "https://www.yavuzertugrul.com"
+url: "yavuzertugrul.com"
 
 source: .
 destination: ./_site
