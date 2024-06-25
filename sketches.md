@@ -20,6 +20,16 @@ permalink: /sketches/
     <div class="art-item"><img src="/images/sketch-library/pixel_dream.jpg" alt="Pixel Dream" onclick="openLightbox('/images/sketch-library/pixel_dream.jpg')"></div>
     <div class="art-item"><img src="/images/sketch-library/city.jpg" alt="Pixel Dream" onclick="openLightbox('/images/sketch-library/city.jpg')"></div>
     <div class="art-item"><img src="/images/sketch-library/creepy_lion.jpg" alt="Pixel Dream" onclick="openLightbox('/images/sketch-library/creepy_lion.jpg')"></div>
+    <div class="art-item"><img src="/images/sketch-library/pixel_drone.jpeg" alt="Pixel Drone" onclick="openLightbox('/images/sketch-library/pixel_drone.jpeg')"></div>
+    <div class="art-item"><img src="/images/sketch-library/pixel_jungle.jpeg" alt="Pixel Jungle" onclick="openLightbox('/images/sketch-library/pixel_jungle.jpeg')"></div>
+    <div class="art-item"><img src="/images/sketch-library/pixel_cube.jpeg" alt="Pixel Cube" onclick="openLightbox('/images/sketch-library/pixel_cube.jpeg')"></div>
+    <div class="art-item"><img src="/images/sketch-library/beach.png" alt="Beach" onclick="openLightbox('/images/sketch-library/beach.png')"></div>
+    <div class="art-item"><img src="/images/sketch-library/last_dance.png" alt="Last Dance" onclick="openLightbox('/images/sketch-library/last_dance.png')"></div>
+    <div class="art-item"><img src="/images/sketch-library/random_thoughts.png" alt="Random Thoughts" onclick="openLightbox('/images/sketch-library/random_thoughts.png')"></div>
+    <div class="art-item"><img src="/images/sketch-library/blue_knight.png" alt="Blue Knight" onclick="openLightbox('/images/sketch-library/blue_knight.png')"></div>
+    <div class="art-item"><img src="/images/sketch-library/back_to_black.png" alt="Back to Black" onclick="openLightbox('/images/sketch-library/back_to_black.png')"></div>
+    <div class="art-item"><img src="/images/sketch-library/bbgd.png" alt="BBGD" onclick="openLightbox('/images/sketch-library/bbgd.png')"></div>
+
 </div>
 
 <!-- Lightbox Container -->
