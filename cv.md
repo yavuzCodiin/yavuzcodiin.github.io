@@ -26,28 +26,59 @@ permalink: /cv/
     <div class="cv-section">
         <h2 class="gradient-text_4">Skills</h2>
         <ul>
-            <li>ROS/ROS2, Docker, Python, ML, Linux, Matplotlib, Scikit-learn, OOP, Arduino, QT, Scrapy, Pandas, NumPy, Seaborn</li>
+            <li>ROS/ROS2, Docker, Python, ML, Linux, Matplotlib, Scikit-learn, OOP, Bash Scripting, QT, Scrapy, Pandas, NumPy, Seaborn</li>
         </ul>
     </div>
 
     <div class="cv-section">
         <h2 class="gradient-text_4">Professional Experience</h2>
         <div class="typing-container">
+            <h3 class="typing gradient-text_24">Robotics Software Engineer at Kindhelm (Espoo, Finland)</h3>
+        </div>
+        <p class="gradient-text_8"><i>July 2024 - Present</i></p>
+        <ul>
+            <li>Docker and Linux:</li>
+            <br>
+            <li>ROS/ROS2 Framework:</li>
+            <br>
+            <li>Jetson Orin NX and Sensor Integration:</li>
+            <br>
+            <li>Python Programming</li>
+        </ul>
+    </div>
+
+    <div class="cv-section">
+        <div class="typing-container">
             <h3 class="typing gradient-text_24">Robotics Software Engineer at NH Tech Robotics (Istanbul, Turkey)</h3>
         </div>
-        <p class="gradient-text_8"><i>April 2024 - Present</i></p>
+        <p class="gradient-text_8"><i>April 2024 - July 2024</i></p>
         <ul>
-            <li>Robotics Development and Simulation: Design, develop, and simulate advanced robotic systems to enhance functionality and efficiency, ensuring reliability and performance through comprehensive testing in virtual environments using RViz2 and Gazebo.</li>
+            <li>Robotics Development and Simulation: Design, develop, and simulate advanced robotic systems to enhance functionality and efficiency, ensuring reliability and performance through comprehensive testing in virtual environments using Rviz2 and Gazebo.</li>
             <br>
             <li>Docker and Linux: Utilize Docker for containerization to streamline development processes and ensure consistent environments across different stages of deployment, while leveraging Linux-based systems for robust and reliable operation of robotic applications.</li>
             <br>
-            <li>ROS/ROS2 Framework: Implement and manage robot software using the Robot Operating System (ROS and ROS2), enabling seamless communication between robotic components and systems.</li>
+            <li>ROS/ROS2 Framework: Implement and manage robot software using the Robot Operating System, enabling seamless communication between robotic components and systems. Develop ROS2 driver for IMU and use the Kalibr tool for camera-camera and camera-IMU temporal calibration (1 ms sync). ros1_bridge(ROS and ROS2 communication), used various Isaac ROS packages such as Isaac ROS Argus Camera, image_proc, and v4l2_camera.</li>
             <br>
-            <li>Jetson Orin NX and Sensor Integration: Integrate NVIDIA Jetson Orin NX for AI-powered robotic applications, utilizing IMX477 and AR0234 cameras and IMU for precise calibration for camera-IMU and camera-camera calibration. Developing packages, custom conversion and publishing nodes for AR0234 cameras, created mono and stereo vision systems, and leveraged Isaac ROS Argus for enhanced image processing capabilities.</li>
+            <li>Jetson Orin NX and Sensor Integration: Integrate NVIDIA Jetson Orin NX for AI-powered robotic applications, utilizing IMX477 and AR0234 cameras and IMU for precise calibration. Develop packages, custom conversion, and publishing nodes for AR0234 cameras, IMU, created stereo from mono vision system, and leveraged Isaac ROS Argus for enhanced image processing capabilities. I2C for communication with various sensors such as IMU.</li>
             <br>
-            <li>Python Programming: Develop scripts and applications in Python for various robotic functionalities, including control algorithms, data processing, and automation tasks.</li>
+            <li>Python Programming: Develop scripts and applications in Python for various robotic functionalities.</li>
         </ul>
+        <div class="art-gallery">
+            <div class="art-item">
+                <img src="/images/experience_visual_library/nh_tech_robotics_job_1.jpg" alt="nh_tech_job_1" onclick="openLightbox('/images/experience_visual_library/nh_tech_robotics_job_1.jpg')">
+            </div>
+            <div class="art-item">
+                <img src="/images/experience_visual_library/nh_tech_robotics_job_2.jpg" alt="nh_tech_job_2" onclick="openLightbox('/images/experience_visual_library/nh_tech_robotics_job_2.jpg')">
+            </div>
+            <div class="art-item">
+                <img src="/images/experience_visual_library/nh_tech_robotics_job_3.jpg" alt="nh_tech_job_3" onclick="openLightbox('/images/experience_visual_library/nh_tech_robotics_job_3.jpg')">
+            </div>
+            <div class="art-item">
+                <img src="/images/experience_visual_library/nh_tech_robotics_job_4.jpg" alt="nh_tech_job_4" onclick="openLightbox('/images/experience_visual_library/nh_tech_robotics_job_4.jpg')">
+            </div>
+        </div>
     </div>
+
 
     <div class="cv-section">
         <div class="typing-container">

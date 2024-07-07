@@ -59,25 +59,25 @@ In this project, I started by figuring out how to construct a maze. Once I had a
 - ### <u>Creating Maze</u>
 I tried to give well documented clear code and every function has its docstring but I will also add my comments too this is same for other parts of the project too.
  
-```python
+```
 import copy, random, types
 from enum import Enum
 ```
 I first created Cell structure, each cell will have two type, one of them will be `Empty` which our algorithm can move and search through and `Block` for walls of our maze  
-```python
+```
 class CellType(Enum):
     Empty = 1
     Block = 2
 ```
 We have marks on cells so one will be for `Start` and `End` and `No` for rest 
-```python
+```
 class CellMark(Enum):
     No = 0
     Start = 1
     End = 2
 ```
 Here cell is initialized each cell will have these attributes `type`, and `mark` as we defined previously, `position`, `count` for counting steps, `path_from` for storing where it came from
-```python
+```
 class Cell:
     def __init__(self, type = CellType.Empty, pos = None):
         self.type = type
@@ -87,7 +87,7 @@ class Cell:
         self.mark = CellMark.No
 ```
 A cell network formed by the combination of cell objects
-```python
+```
 class Cell_Network:
     def __init__(self, board):
         self.board = board
@@ -96,7 +96,7 @@ With `get_size` we get board's height and width.
 
 <img src="/images/post-1/get_size.jpg" width="450" height="250" alt="Get Size"/>
 
-```python
+```
     def get_size(self):
         """
 
@@ -118,7 +118,7 @@ With `get_size` we get board's height and width.
         return [len(self.board), len(self.board[0])]
 ```
 We will get our cell position located `at` specified position
-```python
+```
     def at(self, pos):
         """
 
@@ -141,7 +141,7 @@ We will get our cell position located `at` specified position
         return self.board[pos[0]][pos[1]]
 ```
 Simply cloning the board
-```python
+```
     def clone(self):
         """
         Clone the board.
@@ -161,7 +161,7 @@ Simply cloning the board
 ```
 Clearing the board with specified count for example at the beginning we have infinite possibilities right, so we give count = math.inf to make count of each cell equals to infinity
 
-```python
+```
     def clear_count(self, count):
         """
 
@@ -186,7 +186,7 @@ Clearing the board with specified count for example at the beginning we have inf
 ```
 We need to make sure if the position is valid point, and that it appears within the boundaries of the board. 
 
-```python
+```
     def is_valid_point(self, pos):
         """
 
@@ -212,7 +212,7 @@ We need to make sure if the position is valid point, and that it appears within 
 
 We create empty maze with `create_empty_maze` it takes width and height of maze and returns namespace with attributes like `board` which is created by combination of cells, also we have `start` and `end` positions.
 
-```python
+```
 def create_empty_maze(x, y): #create empty maze with board, start, end attributes
     """
     
@@ -247,7 +247,7 @@ def create_empty_maze(x, y): #create empty maze with board, start, end attribute
 
 With `create_wall_maze` we created a whole maze with walls, again it returns namespace with same attributes as `create_empty_maze`.
 
-```python
+```
 def create_wall_maze(x, y):
     """
 
@@ -293,7 +293,7 @@ def create_wall_maze(x, y):
 
 I used `add_point` function to calculate the position of neighboring cells. For example if I have [2,3] as position, to move left neighbor I can add [2,3] with [-1,0] 
 
-```python
+```
 def add_point(a, b):
     """
     
@@ -332,7 +332,7 @@ So this is our maze with `Cell`, `CellMark`, `CellType`, `Cell_Network` we have 
 
 Below you can see how our algorithm works in pseudocode to have more information you can visit [wikipedia](https://en.wikipedia.org/wiki/Best-first_search#Greedy_BeFS)
 
-```rust
+```
 procedure GBS(start, target) is:
   mark start as visited
   add start to queue
@@ -356,7 +356,7 @@ While measuring the distance we will use something called Manhattan Distance, it
 
 This function calculates the distance from start for every cell, not only destination, this is helpful when we think about robots navigation where robot might need to navigate to various points in an environment efficiently. We can use it to calculate the shortest path to any of the nodes. However, if optimization is our priority we'd change the algorithm, when it finds destination it stops.
 
-```python
+```
 import my_maze
 import math
 
@@ -426,7 +426,7 @@ We will use backtracking to find shortest path, it works as follows:
 2. Scan neighbours and pick with lowest number.
 3. Repeat the process until you reach start cell.
 
-```python
+```
 def backtrack_to_start(board, end):
     """
 
@@ -461,7 +461,7 @@ def backtrack_to_start(board, end):
 ### <u>Drawing Maze and Path</u>
 Until here we created structure of our maze, then we created our shortest path finding algorithm now we will visualize them.
 
-```python
+```
 import pygame, math
 import my_maze
 
@@ -472,7 +472,7 @@ cell_font = pygame.font.SysFont(pygame.font.get_default_font(), 25)
 
 This function `trans_rect` is designed to move a rectangle by a specified offset without altering its size.
 
-```python
+```
 def trans_rect(r, offset):
     """
 
@@ -498,7 +498,7 @@ def trans_rect(r, offset):
 
 Our main loop for controlling the application 
 
-```python
+```
 def main_loop(ui):
     """
     
@@ -546,14 +546,14 @@ def main_loop(ui):
 
 The Finder class is designed to manage and visualize a board and a path.
 
-```python
+```
 class Finder:
     def __init__(self):
         self.board = None
         self.path = None
 ```
 
-```python
+```
     def set_board(self, board):
         """
 
@@ -574,7 +574,7 @@ class Finder:
         """
         self.board = board
 ```
-```python
+```
     def set_path(self, path):
         """
 
@@ -595,7 +595,7 @@ class Finder:
         """
         self.path = path
 ```
-```python
+```
     def run(self):
         """
 
@@ -616,7 +616,7 @@ class Finder:
         main_loop(self)
 ```
 
-```python
+```
     def draw(self, surface):
         """
         Draw the board and path on the given surface.
@@ -647,7 +647,7 @@ Next I will talk about metrics of board which we will use them to draw our cell,
 
 This class will help us to locate specific parts of the board, including the left, top, height, and bottom. Additionally, it will help us to determine cell's x and y coordinates, allowing us to create a cell rectangle.  
 
-```python
+```
 class BoardMetrics:
     def __init__(self, area, board):
         self.area = area #area of the board which is surface.rect() object rect<x,y,w,h> board is what we created in my_maze.py
@@ -666,7 +666,7 @@ class BoardMetrics:
 
 This function will take position of the cell we will insert to board/maze and use it to get cell rectangle and create the board with them.
 
-```python
+```
     def cell_rect(self, pos):
         """
 
@@ -690,7 +690,7 @@ This function will take position of the cell we will insert to board/maze and us
 
 To draw path from center of each cell we will use the following function.
 
-```python
+```
     def cell_center(self, pos):
         """
 
@@ -715,7 +715,7 @@ To draw path from center of each cell we will use the following function.
 
 Until here we calculated board metrics, with them we created cell rectangle, and we found its center to visualize the path, now we will use all of them to draw complete board, and path.
 
-```python
+```
 def draw_board(surface, area, board):
     """
 
@@ -798,7 +798,7 @@ So I divided my project into three parts and up to here I tried to talk about ho
 
 ## <u>Main Interactive</u>
 
-```python
+```
 import algo as solver_algo
 import my_maze as maze
 import draw_s_path as draw
