@@ -95,7 +95,7 @@ permalink: /bookshelf/
       <div class="book-cover">
         <div class="book-inside"></div>
         <div class="book-image">
-          <img src="/images/bookshelf_library/book7.jpg" />
+          <img src="/images/bookshelf_library/davinci_code.jpg" />
           <div class="effect"></div>
           <div class="light"></div>
         </div>
@@ -108,7 +108,7 @@ permalink: /bookshelf/
       <div class="book-cover">
         <div class="book-inside"></div>
         <div class="book-image">
-          <img src="/images/bookshelf_library/book8.jpg" />
+          <img src="/images/bookshelf_library/the_roman_empire_and_its_germanic_people.jpg" />
           <div class="effect"></div>
           <div class="light"></div>
         </div>
