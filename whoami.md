@@ -4,7 +4,7 @@ title: whoami
 permalink: /whoami/
 ---
 
-<img src= "\images\whoami\whoami_pagegiphy.gif" alt="Learning" width="990" height="400">
+<img src= "\images\whoami\no_face_v2.jpg" alt="Learning" width="990" height="600">
 
 Hello there I'm Yavuz ERTUĞRUL, I graduated from METU (#1 in Turkey, #133 in World, QS World 2024 University Rankings in Electrical and Electronics Engineering). My passion for software development strengthened during my university years, increasing my desire to pursue a career in this field. In this direction, I participated in Microsoft's Microsoft Student Partner program in 2016-2017, where I worked on future technologies like Chatbot, Azure, and Cognitive Services. In 2017, I interned at Microsoft in the Developer Experiences & Evangelism department. During this period, I reinforced my knowledge in software and technology through concrete projects.
 

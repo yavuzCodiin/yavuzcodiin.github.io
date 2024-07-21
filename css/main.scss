@@ -2,9 +2,9 @@
 #Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import "base";
+@import "base"; //
 
-@import "thought";
+@import "thought"; //
 
 @import "gradient_colors"; //
 
@@ -13,3 +13,5 @@
 @import "medium_style"; //
 
 @import "cv"; //
+
+@import "bookshelf"; //
