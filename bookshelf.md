@@ -5,9 +5,7 @@ permalink: /bookshelf/
 ---
 
 <!-- bookshelf.md -->
-<div class="the_shelf">
    Thousands books to read, thousands lives to live, new cities to see, new flavours to taste and new emotions to feel, isn't it the best thing to read, welcome to my library!
-</div>
 
 <h2>Read Before 2023</h2>
 <div class="book-wrapper">
