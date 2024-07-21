@@ -29,6 +29,9 @@ permalink: /sketches/
     <div class="art-item"><img src="/images/sketch-library/blue_knight.png" alt="Blue Knight" onclick="openLightbox('/images/sketch-library/blue_knight.png')"></div>
     <div class="art-item"><img src="/images/sketch-library/back_to_black.png" alt="Back to Black" onclick="openLightbox('/images/sketch-library/back_to_black.png')"></div>
     <div class="art-item"><img src="/images/sketch-library/bbgd.png" alt="BBGD" onclick="openLightbox('/images/sketch-library/bbgd.png')"></div>
+    <div class="art-item"><img src="/images/sketch-library/ultron.jpg" alt="Ultron" onclick="openLightbox('/images/sketch-library/ultron.jpg')"></div>
+    <div class="art-item"><img src="/images/sketch-library/cube.jpg" alt="Blue Cube" onclick="openLightbox('/images/sketch-library/cube.jpg')"></div>
+
 
 </div>
 
