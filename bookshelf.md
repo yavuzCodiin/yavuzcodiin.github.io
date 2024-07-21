@@ -121,7 +121,7 @@ permalink: /bookshelf/
       <div class="book-cover">
         <div class="book-inside"></div>
         <div class="book-image">
-          <img src="/images/bookshelf_library/book9.jpg" />
+          <img src="/images/bookshelf_library/avrupa_tarihi_üzerine_yazılar.jpeg" />
           <div class="effect"></div>
           <div class="light"></div>
         </div>
