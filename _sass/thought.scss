@@ -19,8 +19,16 @@
   }
 
   .thought-image {
-    height: 400px;
-    width: 1200px; /* This ensures the width adjusts to maintain the aspect ratio */
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+  }
+  
+  /* Additional styling for smaller screens */
+  @media (max-width: 768px) {
+    .thought-image {
+      max-width: 100%;
+    }
   }
   
   .thought-date {
