@@ -29,15 +29,55 @@ This is my first time getting into application side of artificial intelligence, 
 
 # <span class="gradient-text_4">Comparison of PyTorch vs. TensorFlow</span>
 
-| Feature/Aspect                     | PyTorch                                    | TensorFlow                                |
-|------------------------------------|--------------------------------------------|-------------------------------------------|
-| **Ease of Use**                    | Flexible, beginner-friendly                | Steeper learning curve, harder for beginners |
-| **Community Support**              | Strong support from Facebook and open-source community | Active community, extensive resources |
-| **Integration**                    | Seamless with Python, dynamic graph construction | Keras integration as a high-level API |
-| **Production Deployment**          | Historically less mature, improving with tools like TorchServe and ONNX | Strong support with tools like TensorFlow Lite, TensorFlow.js |
-| **Debugging**                      | Easier due to dynamic graph construction   | More abstract, higher-level API might make debugging harder |
-| **Ecosystem**                      | Popular within the community, growing rapidly | Broader ecosystem, well-established |
-| **Summary**                        | Excellent for experimentation and integration with Python-based robotic systems | Strong for production environments, broader toolset |
+<div style="overflow-x:auto;">
+<table>
+  <thead>
+    <tr>
+      <th>Feature/Aspect</th>
+      <th>PyTorch</th>
+      <th>TensorFlow</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Ease of Use</strong></td>
+      <td>Flexible, beginner-friendly</td>
+      <td>Steeper learning curve, harder for beginners</td>
+    </tr>
+    <tr>
+      <td><strong>Community Support</strong></td>
+      <td>Strong support from Facebook and open-source community</td>
+      <td>Active community, extensive resources</td>
+    </tr>
+    <tr>
+      <td><strong>Integration</strong></td>
+      <td>Seamless with Python, dynamic graph construction</td>
+      <td>Keras integration as a high-level API</td>
+    </tr>
+    <tr>
+      <td><strong>Production Deployment</strong></td>
+      <td>Improving with tools like TorchServe and ONNX</td>
+      <td>Strong support with tools like TensorFlow Lite, TensorFlow.js</td>
+    </tr>
+    <tr>
+      <td><strong>Debugging</strong></td>
+      <td>Easier due to dynamic graph construction</td>
+      <td>More abstract, higher-level API might make debugging harder</td>
+    </tr>
+    <tr>
+      <td><strong>Ecosystem</strong></td>
+      <td>Popular, growing rapidly</td>
+      <td>Well-established, broader ecosystem</td>
+    </tr>
+    <tr>
+      <td><strong>Summary</strong></td>
+      <td>Great for experimentation and Python-based robotics</td>
+      <td>Strong for production, broader toolset</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 
 <div class="image-container" style="text-align: center;">
     <img src="/images/post-9/nvidia_jetson_orin_nx.png" width="1150" height="550" alt="nvidia_jetson_orin_nx" loading="lazy" />
