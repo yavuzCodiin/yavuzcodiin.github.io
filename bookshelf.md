@@ -488,4 +488,17 @@ permalink: /bookshelf/
     </div>
   </div>
 
+  <div class="book-items">
+    <div class="main-book-wrap">
+      <div class="book-cover">
+        <div class="book-inside"></div>
+        <div class="book-image">
+          <img src="/images/bookshelf_library/read_2024/Norse_Myths_R.I_Page.jpg" />
+          <div class="effect"></div>
+          <div class="light"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
