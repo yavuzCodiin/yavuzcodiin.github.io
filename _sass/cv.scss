@@ -20,20 +20,53 @@
 }
 
 // Added for Experience visual purpose
+.art-gallery-wrapper {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+}
+
 .art-gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    display: flex;
+    transition: transform 0.5s ease;
 }
 
 .art-item {
-    margin: 10px;
+    flex: 0 0 calc(33.33% - 20px); /* Show 3 items at a time with some margin */
+    margin: 10px; /* Adjust margin to create distance between items */
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .art-item img {
     width: 100%;
     height: auto;
+    object-fit: cover;
     cursor: pointer;
+}
+
+.nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.nav.prev {
+    left: 0;
+}
+
+.nav.next {
+    right: 0;
 }
 
 // Lightbox styles
@@ -111,6 +144,12 @@
     .link-table td a {
         display: block;
         width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .art-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust for smaller screens */
     }
 }
 

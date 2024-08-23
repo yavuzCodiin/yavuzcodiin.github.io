@@ -63,19 +63,23 @@ permalink: /cv/
             <br>
             <li>Python Programming: Develop scripts and applications in Python for various robotic functionalities.</li>
         </ul>
-        <div class="art-gallery">
-            <div class="art-item">
-                <img src="/images/experience_visual_library/nh_tech_robotics_job_1.jpg" alt="nh_tech_job_1" onclick="openLightbox('/images/experience_visual_library/nh_tech_robotics_job_1.jpg')">
+        <div class="art-gallery-wrapper">
+            <div class="art-gallery">
+                <div class="art-item">
+                    <img src="/images/experience_visual_library/nh_tech_robotics_job_1.jpg" alt="nh_tech_job_1" onclick="openLightbox('/images/experience_visual_library/nh_tech_robotics_job_1.jpg')">
+                </div>
+                <div class="art-item">
+                    <img src="/images/experience_visual_library/nh_tech_robotics_job_2.jpg" alt="nh_tech_job_2" onclick="openLightbox('/images/experience_visual_library/nh_tech_robotics_job_2.jpg')">
+                </div>
+                <div class="art-item">
+                    <img src="/images/experience_visual_library/nh_tech_robotics_job_3.jpg" alt="nh_tech_job_3" onclick="openLightbox('/images/experience_visual_library/nh_tech_robotics_job_3.jpg')">
+                </div>
+                <div class="art-item">
+                    <img src="/images/experience_visual_library/nh_tech_robotics_job_4.jpg" alt="nh_tech_job_4" onclick="openLightbox('/images/experience_visual_library/nh_tech_robotics_job_4.jpg')">
+                </div>
             </div>
-            <div class="art-item">
-                <img src="/images/experience_visual_library/nh_tech_robotics_job_2.jpg" alt="nh_tech_job_2" onclick="openLightbox('/images/experience_visual_library/nh_tech_robotics_job_2.jpg')">
-            </div>
-            <div class="art-item">
-                <img src="/images/experience_visual_library/nh_tech_robotics_job_3.jpg" alt="nh_tech_job_3" onclick="openLightbox('/images/experience_visual_library/nh_tech_robotics_job_3.jpg')">
-            </div>
-            <div class="art-item">
-                <img src="/images/experience_visual_library/nh_tech_robotics_job_4.jpg" alt="nh_tech_job_4" onclick="openLightbox('/images/experience_visual_library/nh_tech_robotics_job_4.jpg')">
-            </div>
+            <button class="nav prev" onclick="moveGallery(this, -1)">&#10094;</button>
+            <button class="nav next" onclick="moveGallery(this, 1)">&#10095;</button>
         </div>
     </div>
 
@@ -105,14 +109,14 @@ permalink: /cv/
             <tr>
                 <td><a href="https://acrome.net/post/synchronizing-linear-motors-and-dc-motors">Synchronizing Linear Motors and DC Motors</a></td>
                 <td><a href="https://acrome.net/post/essentials-of-building-a-mobile-robot-all-you-need-to-know">Essentials of Building a Mobile Robot: All You Need to Know</a></td>
-                <td><a href="https://acrome.net/post/exploring-acromes-stewart-platform-capabilities-deliverables-and-usage">Exploring ACROME’s Stewart Platform: Capabilities, Deliverables and Usage</a></td>
+                <td><a href="https://acrome.net/post/exploring-acromes-stewart-platform-capabilities-deliverables-and-usage">Exploring ACROME's Stewart Platform: Capabilities, Deliverables and Usage</a></td>
                 <td><a href="https://acrome.net/post/applications-that-you-can-do-with-brushed-dc-motors">Applications That You Can Do With Brushed DC Motors</a></td>
             </tr>
             <tr>
                 <td><a href="https://acrome.net/post/exploring-control-systems-and-stability-a-comprehensive-guide-to-ball-balancing-tables-and-bode-diagrams">Exploring Control Systems and Stability: A Comprehensive Guide to Ball Balancing Tables and Bode Diagrams</a></td>
                 <td><a href="https://acrome.net/post/where-to-use-and-how-to-use-brushed-dc-motors">Where to and How to use Brushed DC Motors Drivers?</a></td>
                 <td><a href="https://acrome.net/post/beginners-guide-to-actuators">Beginners Guide to Actuators</a></td>
-                <td><a href="https://acrome.net/post/acrome-products-role-in-prof-claudia-yasars-teaching-approach">Acrome Products Role in Prof. Claudia Yaşar’s Teaching Approach</a></td>
+                <td><a href="https://acrome.net/post/acrome-products-role-in-prof-claudia-yasars-teaching-approach">Acrome Products Role in Prof. Claudia Yaşar's Teaching Approach</a></td>
             </tr>
             <tr>
                 <td><a href="https://acrome.net/post/from-gaming-to-engineering-joystick-control-of-stewart-platform">From Gaming to Engineering: Joystick Control of Stewart Platform</a></td>
@@ -121,31 +125,35 @@ permalink: /cv/
                 <td><a href="https://acrome.net/post/introduction-to-robotic-manipulators">Introduction to Robotic Manipulators</a></td>
             </tr>
         </table>
-        <div class="art-gallery">
-            <div class="art-item">
-                <img src="/images/experience_visual_library/acrome_job_1.png" alt="acrome_job_1" onclick="openLightbox('/images/experience_visual_library/acrome_job_1.png')">
+        <div class="art-gallery-wrapper">
+            <div class="art-gallery">
+                <div class="art-item">
+                    <img src="/images/experience_visual_library/acrome_job_1.png" alt="acrome_job_1" onclick="openLightbox('/images/experience_visual_library/acrome_job_1.png')">
+                </div>
+                <div class="art-item">
+                    <img src="/images/experience_visual_library/acrome_job_2.png" alt="acrome_job_2" onclick="openLightbox('/images/experience_visual_library/acrome_job_2.png')">
+                </div>
+                <div class="art-item">
+                    <img src="/images/experience_visual_library/acrome_job_3.jpg" alt="acrome_job_3" onclick="openLightbox('/images/experience_visual_library/acrome_job_3.jpg')">
+                </div>
+                <div class="art-item">
+                    <img src="/images/experience_visual_library/acrome_job_4.png" alt="acrome_job_4" onclick="openLightbox('/images/experience_visual_library/acrome_job_4.png')">
+                </div>
+                <div class="art-item">
+                    <img src="/images/experience_visual_library/acrome_job_5.png" alt="acrome_job_5" onclick="openLightbox('/images/experience_visual_library/acrome_job_5.png')">
+                </div>
+                <div class="art-item">
+                    <img src="/images/experience_visual_library/acrome_job_6.png" alt="acrome_job_6" onclick="openLightbox('/images/experience_visual_library/acrome_job_6.png')">
+                </div>
+                <div class="art-item">
+                    <img src="/images/experience_visual_library/acrome_job_7.png" alt="acrome_job_7" onclick="openLightbox('/images/experience_visual_library/acrome_job_7.png')">
+                </div>
+                <div class="art-item">
+                    <img src="/images/experience_visual_library/acrome_job_8.png" alt="acrome_job_8" onclick="openLightbox('/images/experience_visual_library/acrome_job_8.png')">
+                </div>
             </div>
-            <div class="art-item">
-                <img src="/images/experience_visual_library/acrome_job_2.png" alt="acrome_job_2" onclick="openLightbox('/images/experience_visual_library/acrome_job_2.png')">
-            </div>
-            <div class="art-item">
-                <img src="/images/experience_visual_library/acrome_job_3.jpg" alt="acrome_job_3" onclick="openLightbox('/images/experience_visual_library/acrome_job_3.jpg')">
-            </div>
-            <div class="art-item">
-                <img src="/images/experience_visual_library/acrome_job_4.png" alt="acrome_job_4" onclick="openLightbox('/images/experience_visual_library/acrome_job_4.png')">
-            </div>
-            <div class="art-item">
-                <img src="/images/experience_visual_library/acrome_job_5.png" alt="acrome_job_5" onclick="openLightbox('/images/experience_visual_library/acrome_job_5.png')">
-            </div>
-            <div class="art-item">
-                <img src="/images/experience_visual_library/acrome_job_6.png" alt="acrome_job_6" onclick="openLightbox('/images/experience_visual_library/acrome_job_6.png')">
-            </div>
-            <div class="art-item">
-                <img src="/images/experience_visual_library/acrome_job_7.png" alt="acrome_job_7" onclick="openLightbox('/images/experience_visual_library/acrome_job_7.png')">
-            </div>
-            <div class="art-item">
-                <img src="/images/experience_visual_library/acrome_job_8.png" alt="acrome_job_8" onclick="openLightbox('/images/experience_visual_library/acrome_job_8.png')">
-            </div>
+            <button class="nav prev" onclick="moveGallery(this, -1)">&#10094;</button>
+            <button class="nav next" onclick="moveGallery(this, 1)">&#10095;</button>
         </div>
     </div>
 
@@ -159,10 +167,14 @@ permalink: /cv/
             <br>
             <li>Gained experience in image processing with OpenCV, inverse kinematics, Linux environment, connections and permissions, bash scripting, embedded software development, SSH, Acrome controller, Raspberry Pi, MyRIO devices, ROS framework, and Python.</li>
         </ul>
-        <div class="art-gallery">
-            <div class="art-item">
-                <img src="/images/experience_visual_library/acrome_intern.png" alt="Stewart Pro" onclick="openLightbox('/images/experience_visual_library/acrome_intern.png')">
+        <div class="art-gallery-wrapper">
+            <div class="art-gallery">
+                <div class="art-item">
+                    <img src="/images/experience_visual_library/acrome_intern.png" alt="Stewart Pro" onclick="openLightbox('/images/experience_visual_library/acrome_intern.png')">
+                </div>
             </div>
+            <button class="nav prev" onclick="moveGallery(this, -1)">&#10094;</button>
+            <button class="nav next" onclick="moveGallery(this, 1)">&#10095;</button>
         </div>
     </div>
 
@@ -176,13 +188,17 @@ permalink: /cv/
             <br>
             <li>Programmed an obstacle avoidance robot using Python, ROS, and object-oriented structure.</li>
         </ul>
-        <div class="art-gallery">
-            <div class="art-item">
-                <img src="/images/experience_visual_library/inovasyon_intern_1.png" alt="inovasyon_intern" onclick="openLightbox('/images/experience_visual_library/inovasyon_intern_1.png')">
+        <div class="art-gallery-wrapper">
+            <div class="art-gallery">
+                <div class="art-item">
+                    <img src="/images/experience_visual_library/inovasyon_intern_1.png" alt="inovasyon_intern" onclick="openLightbox('/images/experience_visual_library/inovasyon_intern_1.png')">
+                </div>
+                <div class="art-item">
+                    <img src="/images/experience_visual_library/inovasyon_intern_2.png" alt="inovasyon_intern_2" onclick="openLightbox('/images/experience_visual_library/inovasyon_intern_2.png')">
+                </div>
             </div>
-            <div class="art-item">
-                <img src="/images/experience_visual_library/inovasyon_intern_2.png" alt="inovasyon_intern_2" onclick="openLightbox('/images/experience_visual_library/inovasyon_intern_2.png')">
-            </div>
+            <button class="nav prev" onclick="moveGallery(this, -1)">&#10094;</button>
+            <button class="nav next" onclick="moveGallery(this, 1)">&#10095;</button>
         </div>
     </div>
 
@@ -194,13 +210,17 @@ permalink: /cv/
         <ul>
             <li>Responsible for creating a project using Microsoft technologies and services (e.g., Azure, Chatbot Framework, Cognitive Services).</li>
         </ul>
-        <div class="art-gallery">
-            <div class="art-item">
-                <img src="/images/experience_visual_library/microsoft_intern_1.png" alt="microsoft_intern_1" onclick="openLightbox('/images/experience_visual_library/microsoft_intern_1.png')">
+        <div class="art-gallery-wrapper">
+            <div class="art-gallery">
+                <div class="art-item">
+                    <img src="/images/experience_visual_library/microsoft_intern_1.png" alt="microsoft_intern_1" onclick="openLightbox('/images/experience_visual_library/microsoft_intern_1.png')">
+                </div>
+                <div class="art-item">
+                    <img src="/images/experience_visual_library/microsoft_intern_2.png" alt="microsoft_intern_2" onclick="openLightbox('/images/experience_visual_library/microsoft_intern_2.png')">
+                </div>
             </div>
-            <div class="art-item">
-                <img src="/images/experience_visual_library/microsoft_intern_2.png" alt="microsoft_intern_2" onclick="openLightbox('/images/experience_visual_library/microsoft_intern_2.png')">
-            </div>
+            <button class="nav prev" onclick="moveGallery(this, -1)">&#10094;</button>
+            <button class="nav next" onclick="moveGallery(this, 1)">&#10095;</button>
         </div>
     </div>
 
@@ -258,6 +278,35 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Ensure the lightbox is hidden on page load
     closeLightbox();
+
+    function moveGallery(button, direction) {
+        var galleryWrapper = button.closest('.art-gallery-wrapper');
+        var gallery = galleryWrapper.querySelector('.art-gallery');
+        var items = gallery.querySelectorAll('.art-item');
+        var currentIndex = parseInt(gallery.getAttribute('data-current-index')) || 0;
+        var itemWidth = items[0].offsetWidth + 20; // 20px for margin
+
+        currentIndex += direction;
+        if (currentIndex < 0) {
+            currentIndex = items.length - 3; // Wrap around to the end
+        } else if (currentIndex > items.length - 3) { // Wrap around to the start
+            currentIndex = 0;
+        }
+
+        gallery.style.transform = `translateX(${-currentIndex * itemWidth}px)`;
+        gallery.setAttribute('data-current-index', currentIndex);
+    }
+
+    window.moveGallery = moveGallery;
+
+    // Hide navigation buttons if there are 3 or fewer items
+    document.querySelectorAll('.art-gallery-wrapper').forEach(function(wrapper) {
+        var items = wrapper.querySelectorAll('.art-item');
+        if (items.length <= 3) {
+            wrapper.querySelector('.nav.prev').style.display = 'none';
+            wrapper.querySelector('.nav.next').style.display = 'none';
+        }
+    });
 });
 </script>
 <script>

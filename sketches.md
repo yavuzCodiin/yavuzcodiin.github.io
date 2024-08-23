@@ -60,6 +60,7 @@ permalink: /sketches/
     align-items: center;
     justify-content: center;
     padding-top: 100%; /* This creates a square container */
+    transition: transform 0.5s ease; /* Add transition for animation */
 }
 
 .art-item img {
@@ -108,6 +109,13 @@ permalink: /sketches/
     text-decoration: none;
     cursor: pointer;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .art-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust for smaller screens */
+    }
+}
 </style>
 
 <script>
@@ -129,5 +137,47 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Ensure the lightbox is hidden on page load
     closeLightbox();
+
+    // Function to swap two elements with animation
+    function swapElements(el1, el2) {
+        var rect1 = el1.getBoundingClientRect();
+        var rect2 = el2.getBoundingClientRect();
+
+        var dx = rect2.left - rect1.left;
+        var dy = rect2.top - rect1.top;
+
+        el1.style.transform = `translate(${dx}px, ${dy}px)`;
+        el2.style.transform = `translate(${-dx}px, ${-dy}px)`;
+
+        // Wait for the animation to complete
+        setTimeout(function() {
+            el1.style.transform = '';
+            el2.style.transform = '';
+
+            // Swap the elements in the DOM
+            var parent = el1.parentNode;
+            var sibling = el1.nextSibling === el2 ? el1 : el1.nextSibling;
+            el2.parentNode.insertBefore(el1, el2);
+            parent.insertBefore(el2, sibling);
+        }, 500); // Match this duration with the CSS transition duration
+    }
+
+    // Function to shuffle images continuously
+    function shuffleImages() {
+        var gallery = document.querySelector('.art-gallery');
+        var items = Array.from(gallery.children);
+        var index1 = Math.floor(Math.random() * items.length);
+        var index2 = Math.floor(Math.random() * items.length);
+
+        // Ensure two different indices
+        while (index1 === index2) {
+            index2 = Math.floor(Math.random() * items.length);
+        }
+
+        swapElements(items[index1], items[index2]);
+    }
+
+    // Shuffle images every 3 seconds
+    setInterval(shuffleImages, 3000);
 });
 </script>
