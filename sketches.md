@@ -113,7 +113,7 @@ permalink: /sketches/
 /* Responsive Styles */
 @media (max-width: 768px) {
     .art-gallery {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust for smaller screens */
+        grid-template-columns: repeat(4, 1fr); /* Show 4 images in a row on smaller screens */
     }
 }
 </style>
