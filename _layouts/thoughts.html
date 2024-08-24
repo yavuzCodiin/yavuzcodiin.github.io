@@ -8,11 +8,8 @@
   <div class="thoughts-container">
     {% for thought in site.thoughts %}
       <div class="thought">
-        {% if thought.image %}
-          <img src="{{ thought.image }}" alt="{{ thought.title | escape }}" class="thought-image">
-        {% endif %}
-        <p class="thought-content">{{ thought.content }}</p>
-        <p class="thought-date">{{ thought.date | date: "%d/%m/%y" }}</p>
+        <div class="thought-content">{{ thought.content | newline_to_br }}</div>
+        <div class="thought-date">{{ thought.date | date: "%d/%m/%Y" }}</div>
       </div>
     {% endfor %}
   </div>

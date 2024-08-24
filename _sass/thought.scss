@@ -1,40 +1,58 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .thoughts-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0; /* Remove padding */
+}
+
+.thought {
+  background-color: #000000;
+  border: 1px solid #4e28bf;
+  padding: 20px; /* Reduce padding */
+  margin-bottom: 10px; /* Reduce margin */
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.thought h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.thought-content {
+  font-size: 16px;
+  color: #ffffff;
+  white-space: pre-wrap;
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+}
+
+.thought-date {
+  font-size: 12px;
+  color: #ffffff;
+  text-align: right;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Additional styling for smaller screens */
+@media (max-width: 768px) {
   .thought {
-    background-color: #0000004d;
-    border: 1px solid #340fd6;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-  }
-  
-  .thought-content {
-    font-size: 16px;
-    color: #ffffff;
-    
+    padding: 10px; /* Reduce padding */
   }
 
-  .thought-image {
-    width: 100%;
-    height: auto;
-    max-width: 1000px;
+  .thought h2 {
+    font-size: 20px;
   }
-  
-  /* Additional styling for smaller screens */
-  @media (max-width: 768px) {
-    .thought-image {
-      max-width: 100%;
-    }
+
+  .thought-content {
+    font-size: 14px;
   }
-  
-  .thought-date {
-    font-size: 12px;
-    color: #ffffff;
-    text-align: right;
-    display: block;
-    margin-top: 5px;
-  }
+}
