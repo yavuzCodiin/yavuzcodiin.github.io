@@ -32,7 +32,8 @@ permalink: /sketches/
     <div class="art-item"><img src="/images/sketch-library/ultron.jpg" alt="Ultron" onclick="openLightbox('/images/sketch-library/ultron.jpg')"></div>
     <div class="art-item"><img src="/images/sketch-library/cube.jpg" alt="Blue Cube" onclick="openLightbox('/images/sketch-library/cube.jpg')"></div>
     <div class="art-item"><img src="/images/sketch-library/conquerer.jpg" alt="Conquerer" onclick="openLightbox('/images/sketch-library/conquerer.jpg')"></div>
-
+    <div class="art-item"><img src="/images/sketch-library/www.tiff" alt="www" onclick="openLightbox('/images/sketch-library/www.tiff')"></div>
+    <div class="art-item"><img src="/images/sketch-library/emptiness_machine.jpeg" alt="Emptiness Machine" onclick="openLightbox('/images/sketch-library/emptiness_machine.jpeg')"></div>
 
 </div>
 
