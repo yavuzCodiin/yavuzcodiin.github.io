@@ -1,0 +1,36 @@
+.visual-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.visual-item {
+  text-align: center;
+  margin: 10px;
+}
+
+.visual-box {
+  width: 300px;
+  height: 200px;
+  border: 2px solid transparent;
+  overflow: hidden;
+}
+
+.visual-box img {
+  width: 100%;
+  height: auto;
+}
+
+.visual-item p {
+  font-weight: bold;
+  color: rgb(128, 0, 255); /* Adjust color as needed */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .visual-box {
+    width: 90%;
+    height: auto;
+  }
+}
