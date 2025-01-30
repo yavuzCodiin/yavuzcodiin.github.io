@@ -502,3 +502,60 @@ permalink: /bookshelf/
   </div>
 
 </div>
+
+<h2 class="bookshelf_h2">2025</h2>
+<div class="book-wrapper">
+
+  <div class="book-items">
+    <div class="main-book-wrap">
+      <div class="book-cover">
+        <div class="book-inside"></div>
+        <div class="book-image">
+          <img src="/images/bookshelf_library/2025/bi-cli-cnmeyen-bi-cr-kadinin-mektubu.jpg" />
+          <div class="effect"></div>
+          <div class="light"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="book-items">
+    <div class="main-book-wrap">
+      <div class="book-cover">
+        <div class="book-inside"></div>
+        <div class="book-image">
+          <img src="/images/bookshelf_library/2025/dönüsüm.jpg" />
+          <div class="effect"></div>
+          <div class="light"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="book-items">
+    <div class="main-book-wrap">
+      <div class="book-cover">
+        <div class="book-inside"></div>
+        <div class="book-image">
+          <img src="/images/bookshelf_library/2025/vatan-yahut-silistre.jpg" />
+          <div class="effect"></div>
+          <div class="light"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="book-items">
+    <div class="main-book-wrap">
+      <div class="book-cover">
+        <div class="book-inside"></div>
+        <div class="book-image">
+          <img src="/images/bookshelf_library/2025/Karabibik.jpg" />
+          <div class="effect"></div>
+          <div class="light"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
