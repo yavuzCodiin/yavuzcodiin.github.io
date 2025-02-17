@@ -5,7 +5,7 @@ permalink: /whoami/
 ---
 
 <div style="text-align: center;">
-  <img src= "\images\whoami\no_face.png" alt="Learning" width="500" height="400">
+  <img src= "\images\whoami\dinasaur.jpg" alt="Learning" width="975" height="400">
 </div>
 
 <br>
