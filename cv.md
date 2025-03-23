@@ -33,7 +33,7 @@ permalink: /cv/
     <div class="cv-section">
         <h2 class="gradient-text_4">Professional Experience</h2>
         <div class="typing-container">
-            <h3 class="typing gradient-text_24">Robotics Software Engineer at Kindhelm (Espoo, Finland)</h3>
+            <h3 class="typing gradient-text_24">Robotics Software Engineer at Kindhelm (İstanbul, Turkey)</h3>
         </div>
         <p class="gradient-text_8"><i>July 2024 - Present</i></p>
         <ul>
