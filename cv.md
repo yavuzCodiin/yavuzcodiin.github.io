@@ -35,47 +35,37 @@ permalink: /cv/
         <div class="typing-container">
             <h3 class="typing gradient-text_24">Robotics Software Engineer at Kindhelm (İstanbul, Turkey)</h3>
         </div>
-        <p class="gradient-text_8"><i>July 2024 - Present</i></p>
+        <p class="gradient-text_8"><i>April 2024 - Present</i></p>
         <ul>
-            <li>Docker and Linux:</li>
+            <li>AI and Robotics Development on NVIDIA & Embedded Platforms: Developed and deployed AI-powered robotic applications using Jetson Orin NX/Nano, custom NVIDIA-based boards, and Quectel-based edge devices. Fine-tuned AI models for real-time inference and deployed them directly on Myriad Vision Processor (1.4 TOPS), achieving 4–5 ms object detection latency without a host PC. Conducted field tests across varied embedded platforms, focusing on object detection, ORB-SLAM2/3, and Visual Positioning Systems (VPS).</li>
             <br>
-            <li>ROS/ROS2 Framework:</li>
+            <li>Sensor Fusion and Temporal Calibration: Integrated and calibrated camera and IMU systems (AR0234,IMX477, RealSense D435i, Velodyne LiDAR) for robotics applications. Achieved sub-millisecond synchronization using ROS2-based pipelines (kalibr, ros1 bridge, custom camera-IMU sync tools), enabling reliable sensor fusion and motion tracking.</li>
             <br>
-            <li>Jetson Orin NX and Sensor Integration:</li>
+            <li>ORB-SLAM and Spatial Mapping: Applied ORB-SLAM2 and ORB-SLAM3 in robotics projects for real-time localization and mapping. Generated custom datasets using Oak-D cameras and evaluated SLAM performance on edge and embedded devices. Tuned pipeline parameters and validated results across simulation and real-world scenes.</li>
             <br>
-            <li>Python Programming</li>
-        </ul>
-    </div>
-
-    <div class="cv-section">
-        <div class="typing-container">
-            <h3 class="typing gradient-text_24">Robotics Software Engineer at NH Tech Robotics (Istanbul, Turkey)</h3>
-        </div>
-        <p class="gradient-text_8"><i>April 2024 - July 2024</i></p>
-        <ul>
-            <li>Robotics Development and Simulation: Design, develop, and simulate advanced robotic systems to enhance functionality and efficiency, ensuring reliability and performance through comprehensive testing in virtual environments using Rviz2 and Gazebo.</li>
+            <li>ROS/ROS2 Framework: Created and maintained ROS/ROS2 packages, using tools like isaac_ros_argus_camera, image_proc, v4l2_camera, and ros1_bridge. Integrated SLAM and perception stacks within ROS2, ensuring synchronized operation and effective data routing across components.</li>
             <br>
-            <li>Docker and Linux: Utilize Docker for containerization to streamline development processes and ensure consistent environments across different stages of deployment, while leveraging Linux-based systems for robust and reliable operation of robotic applications.</li>
+            <li>GUI-Free Edge Deployment and Remote Ops: Operated headless devices via SSH for development and debugging. Designed web-based dashboards on local networks to stream outputs and visualize inference results in real time when onboard UI was unavailable, facilitating collaboration and testing.</li>
             <br>
-            <li>ROS/ROS2 Framework: Implement and manage robot software using the Robot Operating System, enabling seamless communication between robotic components and systems. Develop ROS2 driver for IMU and use the Kalibr tool for camera-camera and camera-IMU temporal calibration (1 ms sync). ros1_bridge(ROS and ROS2 communication), used various Isaac ROS packages such as Isaac ROS Argus Camera, image_proc, and v4l2_camera.</li>
+            <li>Simulation and GUI Tooling: Simulated robotic systems in Rviz2 and Gazebo, and built graphical tools using PyQt5 and Leaflet for visualization and command. Integrated OpenStreetMap to support VPS-based navigation systems.</li>
             <br>
-            <li>Jetson Orin NX and Sensor Integration: Integrate NVIDIA Jetson Orin NX for AI-powered robotic applications, utilizing IMX477 and AR0234 cameras and IMU for precise calibration. Develop packages, custom conversion, and publishing nodes for AR0234 cameras, IMU, created stereo from mono vision system, and leveraged Isaac ROS Argus for enhanced image processing capabilities. I2C for communication with various sensors such as IMU.</li>
+            <li>Docker and Linux: Used Docker to ensure consistent environments across diverse Linux targets, including embedded boards. Skilled in debugging Linux-based services and pipelines. Experienced in WSL2 and native Linux, enhancing portability and developer efficiency.</li>
             <br>
-            <li>Python Programming: Develop scripts and applications in Python for various robotic functionalities.</li>
+            <li>Programming Skills (Python, C++): Developed robotics modules, synchronization tools, and SLAM utilities in Python and C++.</li>
         </ul>
         <div class="art-gallery-wrapper">
             <div class="art-gallery">
                 <div class="art-item">
-                    <img src="/images/experience_visual_library/nh_tech_robotics_job_1.jpg" alt="nh_tech_job_1" onclick="openLightbox('/images/experience_visual_library/nh_tech_robotics_job_1.jpg')">
+                    <img src="/images/experience_visual_library/kindhelm_1.jpg" alt="kindhelm" onclick="openLightbox('/images/experience_visual_library/kindhelm_1.jpg')">
                 </div>
                 <div class="art-item">
-                    <img src="/images/experience_visual_library/nh_tech_robotics_job_2.jpg" alt="nh_tech_job_2" onclick="openLightbox('/images/experience_visual_library/nh_tech_robotics_job_2.jpg')">
+                    <img src="/images/experience_visual_library/kindhelm_2.jpg" alt="kindhelm" onclick="openLightbox('/images/experience_visual_library/kindhelm_2.jpg')">
                 </div>
                 <div class="art-item">
-                    <img src="/images/experience_visual_library/nh_tech_robotics_job_3.jpg" alt="nh_tech_job_3" onclick="openLightbox('/images/experience_visual_library/nh_tech_robotics_job_3.jpg')">
+                    <img src="/images/experience_visual_library/kindhelm_3.jpg" alt="kindhelm" onclick="openLightbox('/images/experience_visual_library/kindhelm_3.jpg')">
                 </div>
                 <div class="art-item">
-                    <img src="/images/experience_visual_library/nh_tech_robotics_job_4.jpg" alt="nh_tech_job_4" onclick="openLightbox('/images/experience_visual_library/nh_tech_robotics_job_4.jpg')">
+                    <img src="/images/experience_visual_library/kindhelm_4.jpg" alt="kindhelm" onclick="openLightbox('/images/experience_visual_library/kindhelm_4.jpg')">
                 </div>
             </div>
             <button class="nav prev" onclick="moveGallery(this, -1)">&#10094;</button>
